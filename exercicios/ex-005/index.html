@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias em HTML5</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/foto-m.png" type="image/png">
+        <img src="imagens/foto-g.png" alt="Imagem flexível">
+
+    </picture>
+    <h2>Reproduzindo Áudio</h2>
+    <p>Vamos reproduzir um áudio em HTML5.</p>
+    <audio preload="metadata" controls>
+        <source src="midia/77-Aula27.mp3" type="audio/mpeg">
+        <source src="midia/77-Aula27.ogg" type="audio/ogg">
+        <source src="midia/77-Aula27.wav" type="audio/wav">
+        <p>Infelizmente o seu navegador não carregou o áudio</p>
+        <a href="midia/77-Aula27.mp3">Clique aqui para baixar.</a>
+    </audio>
+    <h2>Formatos de vídeo</h2>
+    <h3>Vísdeos ospedados localmente</h3>
+    <p>Este vídeo é um teste.</p>
+    <video width="700" controls>
+        <source src="midia/pexels-nothing-ahead-10505868.mp4" type="video/mp4">
+        <source src="midia/pexels-nothing-ahead-10505868.m4v" type="video/mp4">
+        <source src="midia/pexels-nothing-ahead-10505868.webm" type="video/webm">
+        <source src="midia/pexels-nothing-ahead-10505868.ogv" type="video/ogg">
+    </video>
+    <h3>Vídeo do youtube</h3>
+    <p>Teste de vídeo do youtube</p>
+    <iframe width="700" height="393" src="https://www.youtube.com/embed/3hng-hmSv2Y" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
+</body>
+</html>
